@@ -34,7 +34,7 @@
 		var viewsPrefix = 'views/';
 
 		// For any unmatched url, send to /
-		$urlRouterProvider.otherwise("/")
+		$urlRouterProvider.otherwise("/dashboard")
 
 		$stateProvider
 			// you can set this to no template if you just want to use the html in the page
@@ -50,6 +50,14 @@
 				templateUrl: viewsPrefix + "about.html",
 				data: {
 					pageTitle: 'About'
+				}
+			})
+
+			.state('blank', {
+				url: "/blank",
+				templateUrl: viewsPrefix + "blank.html",
+				data: {
+					pageTitle: 'Blank'
 				}
 			})
 			.state('contact', {
@@ -95,6 +103,32 @@
 					pageTitle: 'UI'
 				}
 			})
+			.state('dashboard', {
+				url: "/dashboard",
+				templateUrl: viewsPrefix + "dashboard.html",
+				data: {
+					pageTitle: 'Dashboard'
+				}
+			})
+
+			.state('login', {
+				url: "/login",
+				templateUrl: viewsPrefix + "login.html",
+				data: {
+					pageTitle: 'Log In'
+				}
+			})
+
+			.state('flot', {
+				url: "/flot",
+				templateUrl: viewsPrefix + "flot.html",
+				data: {
+					pageTitle: 'Flow Chart'
+				}
+			})
+
+
+
 	})
 	.directive('updateTitle', ['$rootScope', '$timeout',
 		function($rootScope, $timeout) {

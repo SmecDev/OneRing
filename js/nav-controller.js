@@ -39,6 +39,10 @@ angular.module('navController', [])
 				url: '#/ui'
 			},
 			{
+				name: 'Dashboard',
+				url: '#/dashboard'
+			},
+			{
 				name: 'Dropdown Example',
 				url: '#',
 				subPages: [
