@@ -1,0 +1,279 @@
+﻿/*====================================
+ Free To Use For Personal And Commercial Usage
+Author: http://binarytheme.com
+ Share Us if You Like our work 
+ Enjoy Our Codes For Free always.
+======================================*/
+
+/* user image section */
+.user-section {
+    margin-top: 0px;
+    font-size: 22px;
+    background-color: #F0F0F0;
+}
+
+.user-section-inner {
+    height: 65px;
+    width: 65px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+
+.user-section-inner img {
+    margin-left: 10px;
+    width: 55px;
+    height: 60px;
+
+}
+
+.user-info {
+    display: block;
+    color: #000 !important;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 0px
+}
+
+.user-text-online {
+    font-size: 18px;
+    color: #fff
+}
+
+.user-circle-online {
+    width: 15px !important;
+    height: 15px !important;
+}
+
+/* side-menu section */
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: rgba(74, 72, 126, 0);
+}
+
+.navbar-top-links .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #F48F18;
+    color: #000000;
+    height: 82px;
+}
+
+.navbar-top-links > li > a {
+    color: #A6AAA9;
+}
+
+.nav > li > a {
+    padding: 20px 15px;
+}
+
+#side-menu {
+    background-color: #F39019;
+}
+
+#side-menu a {
+    color: #fff;
+    border-bottom: 0px solid #84B899 !important;
+    height: 55px;
+}
+
+.selected {
+    background-color: #000000;
+}
+
+/* back colors */
+.blue {
+    background-color: rgb(113, 159, 241);
+}
+
+.green {
+    background-color: rgb(144, 236, 192);
+}
+
+.red {
+    background-color: rgb(255, 102, 133);
+}
+
+.yellow {
+    background-color: rgb(237, 253, 46);
+}
+
+/* No border */
+.no-boder {
+    border: 0px solid #5bc0de !important;
+}
+
+/* tap nvbar Section */
+
+#navbar {
+    background-color: #EEEEEE;
+
+}
+
+.navbar-brand {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.navbar-brand img {
+    height: 80px;
+}
+
+.top-label {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-top: -24px;
+    margin-right: -24px;
+}
+
+/*large font*/
+.large-font {
+    font-size: 18px;
+}
+
+.body-Login-back {
+    background-color: #ffffff;
+}
+
+.margin-tips {
+    margin: 5px;
+}
+
+.navbar-default {
+    border-color: #27A6BE;
+}
+
+/*media queries*/
+
+@media (min-width: 768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 250px;
+        padding: 0 30px;
+        min-height: 1000px;
+    }
+}
+
+@media (max-width: 768px) {
+    #wrapper {
+        margin-top: 140px !important;
+
+    }
+}
+
+.drop-menu-label {
+    margin-top: -7px;
+
+}
+
+/*profile css*/
+
+.profile-header-container {
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-header-img {
+    padding: 0px;
+}
+
+.profile-header-img > img.img-circle {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #F39019;
+}
+
+.profile-header {
+    margin-top: 0px;
+}
+
+/**
+ * Ranking component
+ */
+.rank-label-container {
+    margin-top: -19px;
+    /* z-index: 1000; */
+    text-align: center;
+}
+
+.label.label-default.rank-label {
+    background-color: #4D8520;
+    padding: 5px 10px 5px 10px;
+    border-radius: 27px;
+}
+
+/*profile css end*/
+
+/**
+ * Small Profile image component
+ */
+
+.profile-header-img > img.img-circle.sm {
+    width: 40px;
+    height: 40px;
+    border: 0px solid #F39019;
+}
+
+.rank-label-container.sm {
+    margin-top: -18px;
+    margin-left: 30px;
+    /* z-index: 1000; */
+    text-align: center;
+}
+
+.label.label-default.rank-label.sm {
+
+    background-color: #4D8520;
+    padding: 1px 4px 1px 4px;
+    border-radius: 27px;
+    font-size: 8px;
+}
+
+/* Small profile css end*/
+
+
+
+/**
+ * Medium Profile image component
+ */
+
+.profile-header-img > img.img-circle.md {
+    width: 50px;
+    height: 50px;
+    border: 0px solid #F39019;
+}
+
+.rank-label-container.md {
+    margin-top: -18px;
+
+    /* z-index: 1000; */
+    text-align: center;
+}
+
+.label.label-default.rank-label.md {
+
+    background-color: #4D8520;
+    padding: 1px 4px 1px 4px;
+    border-radius: 27px;
+    font-size: 8px;
+}
+
+
+.user-info {
+    margin-top:20px;
+    height:80px;
+    font-size:12px;
+
+}
+
+.user-text-online {
+
+    font-size:12px;
+    color:green;
+
+}
+/* Medium profile css end*/

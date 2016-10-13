@@ -1,0 +1,43 @@
+{
+  "name": "AngularBootstrapStarter",
+  "homepage": "https://github.com/jasonmitnik/angular-bootstrap-starter",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-sanitize": "^1.5.8",
+    "angular-ui": "^0.4.0",
+    "angular-leaflet-directive": "^0.10.0",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7",
+    "d3": "^4.2.6",
+    "c3": "^0.4.11",
+    "font-awesome": "^4.6.3",
+    "leaflet": "^0.7.7",
+    "lodash": "^4.16.1",
+    "material-design-icons": "^3.0.1",
+    "jquery": "^3.1.1",
+    "PACE": "pace#^1.0.2",
+    "metisMenu": "^2.5.2"
+  },
+  "resolutions": {
+    "d3": "~3.5.0",
+    "jquery": "~2.2.3"
+  },
+  "devDependencies": {
+    "html5shiv": "^3.7.3",
+    "respond": "^1.4.2",
+    "requirejs": "^2.3.2",
+    "bootstrap3-ie10-viewport-bug-workaround": "^1.0.0",
+    "angular-animate": "^1.5.8",
+    "angular-bootstrap": "^2.1.4"
+  }
+}
