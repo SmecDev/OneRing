@@ -1,0 +1,782 @@
+{
+  "settings": {
+    "top": {
+      "background_color": "#EEEEEE",
+      "icon_color": "#A6AAA9",
+      "selected_color": "#F39019",
+      "selected_icon_color": "#000000",
+      "menu_size" : "83px",
+      "drop_padding" : "10px",
+      "drop_border" : "0px",
+      "show": true,
+      "divider": true
+
+    },
+    "side": {
+      "background_color": "#FF0000",
+      "icon_color": "",
+      "selected_color": "#0000FF",
+      "selected_icon_color": "#0000FF",
+      "menu_size": "250px",
+      "drop_padding" : "10px",
+      "drop_border" : "0px",
+      "show": false,
+      "divider": true
+    },
+    "nav_state": {}
+  },
+
+  "menus" : {
+    "top": {
+
+      "left_side_cp" :
+      [
+        {
+          "menu_id": "c1",
+          "name": "Main",
+          "show_name": false,
+          "state": "dashboard",
+          "url": "#/dashboard",
+          "fa_class": "fa fa-bars fa-3x",
+          "alert_no": "1",
+          "alert_color": "#800080",
+          "type": "main_nav",
+          "divider": true
+        },
+        {
+          "menu_id": "c2",
+          "name": "Support",
+          "show_name": true,
+          "state": "apps",
+          "url": "https://smec.zendesk.com",
+          "fa_class": "fa fa-users fa-3x",
+          "alert_no": "3",
+          "alert_color": "#800080",
+          "type": "hyperlink",
+          "divider": true
+        },
+        {
+          "menu_id": "c3",
+          "name": "Chat 5",
+          "show_name": true,
+          "state": "apps",
+          "url": "",
+          "app_id" : "1",
+          "fa_class": "fa fa-comments fa-3x",
+          "alert_no": "3",
+          "alert_color": "#800080",
+          "type": "applet",
+          "divider": true
+        }
+
+      ],
+
+      "right_side_cp" :
+      [  {
+        "name": "Apps",
+        "state": "apps",
+        "url": "#/apps",
+        "fa_class": "fa fa-th-large fa-3x",
+        "alert_no": "",
+        "type": "view",
+        "divider": true
+      },
+        {
+          "menu_id": "t3",
+          "name": "Tasks",
+          "show_name": false,
+          "state": "apps",
+          "url": "",
+          "app_id" : "2",
+          "fa_class": "fa fa-bell fa-3x",
+          "alert_no": "3",
+          "alert_color": "#800080",
+          "type": "applet",
+          "divider": true
+        }
+
+
+
+      ],
+
+      "pages": [
+        {
+          "menu_id": "p1",
+          "name": "Apps",
+          "state": "apps",
+          "url": "#/apps",
+          "fa_class": "fa fa-th-large fa-fw",
+          "alert_no": "",
+          "divider": true
+        },
+        {
+          "menu_id": "p2",
+          "name": "Projects",
+          "state": "projects",
+          "url": "#/projects",
+          "fa_class": "fa fa-th-large fa-fw",
+          "alert_no": "",
+          "divider": true
+        },
+        {
+          "menu_id": "pg2",
+          "name": "Projects Grid",
+          "state": "projectsgrid",
+          "url": "#/projectgrid",
+          "fa_class": "fa fa-th-large fa-fw",
+          "alert_no": "",
+          "divider": true
+        },
+        {
+          "menu_id": "g1",
+          "name": "GeoSample",
+          "state": "geosample",
+          "url": "#/geosample",
+          "fa_class": "fa fa-th-large fa-fw",
+          "alert_no": "",
+          "divider": true
+        },
+        {
+          "menu_id": "p3",
+          "name": "UI Component Examples",
+          "state": "example",
+          "url": "#/example",
+          "fa_class": "fa fa-dashboard fa-fw",
+          "alert_no": "",
+          
+          "subPages": [
+            {
+              "menu_id": "p4",
+              "name": "Dashboard",
+              "state": "dashboard",
+              "url": "#/dashboard",
+              "fa_class": "fa fa-dashboard fa-fw",
+              
+              "alert_no": "",
+              "alerts": [
+                {
+                  "alert_id": "1",
+                  "alert_desc": "",
+                  "alert_time": "",
+                  "alert_meta": [],
+                  "app": {
+                    "fa_class": "",
+                    "app_id": "1",
+                    "app_name": "",
+                    "app_image": ""
+                  }
+                }
+              ]
+            },
+            {
+              "menu_id": "p5",
+              "name": "Charts",
+              "url": "",
+              "state": "",
+              "fa_class": "fa fa-bar-chart-o fa-fw",
+              
+              "alert_no": "",
+              "subPages": [
+                {
+                  "menu_id": "p6",
+                  "name": "Line Chart",
+                  "state": "linechart",
+                  "url": "#/linechart",
+                  "fa_class": "fa fa-line-chart fa-fw",
+                  
+                  "alert_no": ""
+                },
+                {
+                  "menu_id": "p7",
+                  "name": "Time Series Chart",
+                  "state": "timeserieschart",
+                  "url": "#/timeserieschart",
+                  "fa_class": "fa fa-flask fa-fw",
+                  
+                  "alert_no": ""
+                }
+              ]
+            },
+            {
+              "menu_id": "p8",
+              "name": "Time Line",
+              "url": "#/timeline",
+              "state": "timeline",
+              "fa_class": "fa fa-flask fa-fw",
+              
+              "alert_no": ""
+            },
+            {
+              "menu_id": "p9",
+              "name": "Tables",
+              "url": "#/tables",
+              "state": "tables",
+              "fa_class": "fa fa-edit fa-fw",
+              
+              "alert_no": ""
+            },
+            {
+              "menu_id": "p10",
+              "name": "UI Elements",
+              "fa_class": "wrench",
+              "alert_no": "",
+              
+              "subPages": [
+                {
+                  "menu_id": "p11",
+                  "name": "Panels & Wells",
+                  "state": "panels-wells",
+                  "url": "#/panels-wells",
+                  "fa_class": "fa fa-edit fa-fw",
+                  "alert_no": "",
+                  "divider": true
+                },
+                {
+                  "menu_id": "p11",
+                  "name": "Buttons",
+                  "state": "buttons",
+                  "url": "#/buttons",
+
+                  "fa_class": "fa fa-edit fa-fw",
+                  
+                  "alert_no": ""
+                },
+                {
+                  "menu_id": "p12",
+                  "name": "Notifications",
+                  "state": "notifications",
+                  "url": "#/notifications",
+                  "fa_class": "fa fa-edit fa-fw",
+                  
+                  "alert_no": ""
+                },
+
+
+                {
+                  "menu_id": "p13",
+                  "name": "Typography",
+                  "state": "typography",
+                  "url": "#/typography",
+                  "fa_class": "fa fa-edit fa-fw",
+                  
+                  "alert_no": ""
+                },
+                {
+                  "menu_id": "p14",
+                  "name": "Grid",
+                  "state": "grid",
+                  "url": "#/grid",
+                  "fa_class": "fa fa-edit fa-fw",
+                  
+                  "alert_no": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "menu_id": "p14a",
+          "name": "BootStrap1 Sample Pages",
+          "fa_class": "fa fa-files-o fa-fw",
+          "alert_no": "",
+          
+          "subPages": [
+            {
+              "menu_id": "p15",
+              "name": "Home",
+              "state": "home",
+              "url": "#/home",
+              "fa_class": "fa fa-edit fa-fw",
+              
+              "alert_no": ""
+            },
+            {
+
+              "menu_id": "p16",
+              "name": "About",
+              "state": "about",
+              "url": "#/about",
+              "fa_class": "fa fa-edit fa-fw",
+              
+              "alert_no": ""
+            },
+            {
+              "menu_id": "p17",
+              "name": "Blog",
+              "state": "blog",
+              "url": "#/blog",
+              "fa_class": "fa fa-edit fa-fw",
+              
+              "alert_no": ""
+            },
+            {
+              "menu_id": "p18",
+              "name": "Contact",
+              "state": "contact",
+              "url": "#/contact",
+              "fa_class": "fa fa-edit fa-fw",
+              
+              "alert_no": ""
+            },
+            {
+              "menu_id": "p19",
+              "name": "Contact List",
+              "state": "contact.list",
+              "url": "#/contact.list",
+              "fa_class": "fa fa-edit fa-fw",
+              
+              "alert_no": ""
+            },
+            {
+              "menu_id": "p20",
+              "name": "Login",
+              "state": "login",
+              "url": "#/login",
+              "fa_class": "fa fa-edit fa-fw",
+              
+              "alert_no": ""
+            }
+          ]
+        }
+      ]
+    },
+
+    "side": {
+      "pages": [
+        {
+          "menu_id": "p21",
+          "name": "Apps",
+          "state": "apps",
+          "url": "#/apps",
+          "fa_class": "th-large",
+          "alert_no": "",
+          "divider": true
+        },
+        {
+          "menu_id": "p22",
+          "name": "Projects",
+          "state": "projects",
+          "url": "#/projects",
+          "fa_class": "th-large",
+          "alert_no": "",
+          "divider": true
+        },
+        {
+          "menu_id": "p23",
+          "name": "UI Component Examples",
+          "state": "example",
+          "url": "#/example",
+          "fa_class": "dashboard",
+          "alert_no": "",
+          
+          "subPages": [
+            {
+              "menu_id": "p24",
+              "name": "Dashboard",
+              "state": "dashboard",
+              "url": "#/dashboard",
+              "fa_class": "dashboard",
+              
+              "alert_no": "",
+              "alerts": [
+                {
+                  "menu_id": "p25",
+                  "alert_id": "1",
+                  "alert_desc": "",
+                  "alert_time": "",
+                  "alert_meta": [],
+                  "app": {
+                    "fa_class": "",
+                    "app_id": "1",
+                    "app_name": "",
+                    "app_image": ""
+                  }
+                }
+              ]
+            },
+            {
+
+              "menu_id": "p26",
+              "name": "Charts",
+              "url": "",
+              "state": "",
+              "fa_class": "bar-chart-o",
+              
+              "alert_no": "",
+              "subPages": [
+                {
+                  "menu_id": "p27",
+                  "name": "Line Chart",
+                  "state": "linechart",
+
+                  "url": "#/linechart",
+                  "fa_class": "linechart",
+                  
+                  "alert_no": ""
+                },
+                {
+                  "menu_id": "p28",
+                  "name": "Time Series Chart",
+                  "state": "timeserieschart",
+                  "url": "#/timeserieschart",
+                  "fa_class": "flask",
+                  
+                  "alert_no": ""
+                }
+              ]
+            },
+            {
+
+              "menu_id": "p29",
+              "name": "Time Line",
+              "url": "#/timeline",
+              "state": "timeline",
+              "fa_class": "flask",
+              
+              "alert_no": ""
+            },
+            {
+
+              "menu_id": "p30",
+              "name": "Tables",
+              "url": "#/tables",
+              "state": "tables",
+              "fa_class": "edit",
+              
+              "alert_no": ""
+            },
+            {
+              "menu_id": "p31",
+              "name": "UI Elements",
+              "fa_class": "wrench",
+              "alert_no": "",
+              
+              "subPages": [
+                {
+                  "menu_id": "p32",
+                  "name": "Panels & Wells",
+                  "state": "panels-wells",
+                  "url": "#/panels-wells",
+                  "alert_no": "",
+                  "divider": true
+                },
+                {
+
+                  "menu_id": "p33",
+                  "name": "Buttons",
+                  "state": "buttons",
+                  "url": "#/buttons",
+                  "fa_class": "",
+                  
+                  "alert_no": ""
+                },
+                {
+                  "menu_id": "p34",
+                  "name": "Notifications",
+                  "state": "notifications",
+                  "url": "#/notifications",
+                  "fa_class": "",
+                  
+                  "alert_no": ""
+                },
+                {
+                  "menu_id": "p35",
+                  "name": "Typography",
+                  "state": "typography",
+                  "url": "#/typography",
+                  "fa_class": "",
+                  
+                  "alert_no": ""
+                },
+                {
+                  "menu_id": "p36",
+                  "name": "Grid",
+                  "state": "grid",
+                  "url": "#/grid",
+                  "fa_class": "",
+                  
+                  "alert_no": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+
+
+
+
+
+
+
+          "menu_id": "b23",
+
+          "name": "BootStrap Sample Pages",
+          "url": "#/example",
+          "state": "example",
+
+          "fa_class": "files-o",
+          "alert_no": "",
+          
+          "subPages": [
+            {
+              "name": "Home",
+              "state": "home",
+              "url": "#/home",
+              "fa_class": "",
+              
+              "alert_no": ""
+            },
+            {
+              "name": "About",
+              "state": "about",
+              "url": "#/about",
+              "fa_class": "",
+              
+              "alert_no": ""
+            },
+            {
+              "name": "Blog",
+              "state": "blog",
+              "url": "#/blog",
+              "fa_class": "",
+              
+              "alert_no": ""
+            },
+            {
+              "name": "Contact",
+              "state": "contact",
+              "url": "#/contact",
+              "fa_class": "",
+              
+              "alert_no": ""
+            },
+            {
+              "name": "Contact List",
+              "state": "contact.list",
+              "url": "#/contact.list",
+              "fa_class": "",
+              
+              "alert_no": ""
+            },
+            {
+              "name": "Login",
+              "state": "login",
+              "url": "#/login",
+              "fa_class": "",
+              
+              "alert_no": ""
+            }
+          ]
+        }
+      ]
+    },
+
+
+    "old": [{
+      "name": "apps",
+      "state": "apps",
+      "url": "#/apps",
+      "fa_class": "th-large",
+      "alert_no": 0
+
+    }, {
+      "name": "Projects",
+      "state": "projects",
+      "url": "#/projects",
+      "fa_class": "th-large",
+      "alert_no": 0
+
+    }, {
+      "name": "UI Component Examples",
+      "state": "example",
+      "url": "#/example",
+      "fa_class": "dashboard",
+      "alert_no": 0,
+
+      "subPages": [{
+        "name": "Dashboard",
+        "state": "dashboard",
+        "url": "#/dashboard",
+        "fa_class": "dashboard",
+
+        "alert_no": 0,
+        "alerts": [
+
+          {
+            "alert_id": "1",
+            "alert_desc": "",
+            "alert_time": "",
+            "alert_meta": [],
+
+            "app": {
+              "fa_class": "",
+              "app_id": "1",
+              "app_name": "",
+              "app_image": ""
+            }
+
+
+
+          }
+
+
+
+
+
+        ]
+      },
+
+        {
+          "name": "Charts",
+          "url": "",
+          "state": "",
+          "fa_class": "bar-chart-o",
+
+          "alert_no": 0,
+          "subPages": [{
+            "name": "Line Chart",
+            "state": "linechart",
+            "url": "#/linechart",
+            "fa_class": "linechart",
+
+            "alert_no": 0
+          }, {
+            "name": "Time Series Chart",
+            "state": "timeserieschart",
+            "url": "#/timeserieschart",
+            "fa_class": "flask",
+
+            "alert_no": 0
+          }
+
+          ]
+        }, {
+          "name": "Time Line",
+          "url": "#/timeline",
+          "state": "timeline",
+          "fa_class": "flask",
+
+          "alert_no": 0
+
+
+        }, {
+          "name": "Tables",
+          "url": "#/tables",
+          "state": "tables",
+          "fa_class": "edit",
+
+          "alert_no": 0
+        }, {
+          "name": "UI Elements",
+          "fa_class": "wrench",
+          "alert_no": 0,
+
+          "subPages": [{
+            "name": "Panels & Wells",
+            "state": "panels-wells",
+            "url": "#/panels-wells",
+            "fa_class": "",
+
+            "alert_no": 0
+
+          }, {
+            "name": "Buttons",
+            "state": "buttons",
+            "url": "#/buttons",
+            "fa_class": "",
+
+            "alert_no": 0
+          }, {
+            "name": "Notifications",
+            "state": "notifications",
+            "url": "#/notifications",
+            "fa_class": "",
+
+            "alert_no": 0
+          }, {
+            "name": "Typography",
+            "state": "typography",
+            "url": "#/typography",
+            "fa_class": "",
+
+            "alert_no": 0
+          }, {
+            "name": "Grid",
+            "state": "grid",
+            "url": "#/grid",
+            "fa_class": "",
+
+            "alert_no": 0
+          }]
+        },
+
+        {
+          "name": "BootStrap Sample ",
+          "fa_class": "files-o",
+          "alert_no": 0,
+
+          "subPages": [
+
+            {
+              "name": "Home",
+              "state": "home",
+              "url": "#/home",
+              "fa_class": "",
+
+              "alert_no": 0
+            }, {
+              "name": "About",
+              "state": "about",
+              "url": "#/about",
+              "fa_class": "",
+
+              "alert_no": 0
+            }, {
+              "name": "Blog",
+              "state": "blog",
+              "url": "#/blog",
+              "fa_class": "",
+
+              "alert_no": 0
+            }, {
+              "name": "Contact",
+              "state": "contact",
+              "url": "#/contact",
+              "fa_class": "",
+
+              "alert_no": 0
+            }, {
+              "name": "Contact List",
+              "state": "contact.list",
+              "url": "#/contact.list",
+              "fa_class": "",
+
+              "alert_no": 0
+            }, {
+              "name": "Login",
+              "state": "login",
+              "url": "#/login",
+              "fa_class": "",
+
+              "alert_no": 0
+            }
+
+          ]
+
+
+        }
+      ]
+
+    }
+
+
+
+    ]
+
+  }
+
+
+
+
+}

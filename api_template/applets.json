@@ -1,0 +1,16 @@
+{
+
+  "1": {
+    "name" : "Chat",
+    "view" : "views/chatwindow.html"
+
+
+
+  },
+  "2": {
+    "name": "Checklist",
+    "view": "views/checklistwindow.html"
+
+  }
+
+}

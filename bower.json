@@ -26,7 +26,16 @@
     "material-design-icons": "^3.0.1",
     "jquery": "^3.1.1",
     "PACE": "pace#^1.0.2",
-    "metisMenu": "^2.5.2"
+    "metisMenu": "^2.5.2",
+    "requirejs": "^2.3.2",
+    "angular-timeline": "^1.7.0",
+    "angular-scroll-animate": "^0.9.9",
+    "jquery-ui": "^1.12.1",
+    "ngDraggable": "^0.1.11",
+    "angular-ui-grid": "^3.2.9",
+    "angular-touch": "^1.5.8",
+    "pdfmake": "^0.1.20",
+    "csv": "^1.0.2"
   },
   "resolutions": {
     "d3": "~3.5.0",

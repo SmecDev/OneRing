@@ -1,0 +1,174 @@
+{
+
+
+  "auth_status" : {
+
+    "logged_on" : true,
+
+    "active_apps_in_session" : {
+      "1": {
+        "name" :'Profile Manager App',
+        "active_app_id :'prof_ap123',
+        "active_app_token" : '',
+        active_view: 'Dashboard',
+        active_role: '1',
+        start_time: '2016-10-17 10:54',
+        available_roles: {
+          1:{role_name:'Project Manager'},
+          2:{role_name:'Site Manager'},
+          3:{role_name:'Engineer'}
+        },
+
+      },
+
+
+
+  },
+
+    this_device : {
+
+      name: "Bruce Wayne",
+      active_company_id : "1",
+      device_name: "Iphone",
+      device_id : "21342134",
+      available_companies: {
+
+        1:{
+          company_name: "Wayne Enterprises",
+          job_title : 'CEO',
+          available_applications :
+          [
+            {
+              app_id:'1',
+              app_name:'My Profile',
+              default_view:'',
+              default_role:'',
+              native_app:true
+            },
+            {
+              app_id:'10',
+              app_name:'Channel Management',
+              default_view:'dashboard',
+              default_role:'',
+              native_app:true
+            },
+            {
+              app_id:'2',
+              app_name:'Key Recources',
+              default_view:'dashboard',
+              default_role:'',
+              native_app:true
+            },
+            {
+              app_id:'3',
+              app_name:'Revenue Managment',
+              default_view:'dashboard',
+              default_role:'',
+              native_app:true
+            },
+
+          ]
+
+        },
+        2:{
+          company_name:'Sonar Research For the Blind' ,
+          job_title : 'Chairman',
+          available_applications :
+          [
+            {
+              app_id:'1',
+              app_name:'My Profile',
+              default_view:'',
+              default_role:'',
+              native_app:true
+            },
+            {
+              app_id:'4',
+              app_name:'Source Scientists',
+              default_view:'dashboard',
+              default_role:'',
+              native_app:true
+            },
+            {
+              app_id:'5',
+              app_name:'Key Recources',
+              default_view:'dashboard',
+              default_role:'',
+              native_app:true
+            },
+            {
+              app_id:'6',
+              app_name:'Revenue Managment',
+              default_view:'dashboard',
+              default_role:'',
+              native_app:true
+
+            },
+
+          ]
+        },
+        3:{
+          company_name:'SMEC One Ring Eco System',
+          job_title : 'Research & Development',
+          available_applications :
+          [
+            {
+              app_id:'1',
+              app_name:'My Profile',
+              default_view:'',
+              default_role:'',
+              native_app:true
+            },
+            {
+              app_id:'8',
+              app_name:'Projects',
+              default_view:'dashboard',
+              default_role:'',
+              native_app:true
+            },
+            {
+              app_id:'9',
+              app_name:'IOT Asset Dashboard',
+              default_view:'dashboard',
+              default_role:'',
+              native_app:true
+
+            },
+
+          ]
+        }
+      },
+
+    },
+
+
+  active_devices: [
+
+    {
+      device_name:'Desktop Windows 7',
+      device_id:'2314234',
+      device_ip:'192.168.1.1',
+      start_time: '2016-10-17 10:54',
+    },
+    {
+      device_name:'iPhone',
+      device_id:'2314233',
+      device_ip:'192.168.1.2',
+      start_time: '2016-10-17 11:54',
+    },
+    {
+      device_name:'Android',
+      device_id:'2314255',
+      device_ip:'192.168.1.3',
+      start_time: '2016-10-17 08:54',
+    }
+
+  ],
+
+
+
+
+
+  },
+
+}

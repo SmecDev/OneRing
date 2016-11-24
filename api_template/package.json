@@ -1,0 +1,244 @@
+{
+
+settings : {
+
+right : {
+background_color: '#FF0000'
+selected_color: '#0000FF',
+alert_no : ' ',
+divider: true,
+show: true,
+},
+
+left : {
+background_color: '#FF0000'
+selected_color: '#0000FF',
+alert_no: '',
+divider: true,
+show: true,
+},
+
+
+
+},
+
+pages : [
+{
+name: 'Apps',
+state: 'apps',
+url: '#/apps',
+fa_class : 'th-large',
+alert_no : '',
+divider : true
+},
+{
+name: 'Projects',
+state: 'projects',
+url: '#/projects',
+fa_class : 'th-large',
+alert_no : '',
+divider : true
+},
+{
+name: 'UI Component Examples',
+state: 'example',
+url: '#/example',
+fa_class: 'dashboard',
+alert_no : '',
+divider : true,
+subPages: [
+{
+name: 'Dashboard',
+state: 'dashboard',
+url: '#/dashboard',
+fa_class: 'dashboard',
+divider : true,
+alert_no : '',
+alerts : [
+
+{
+alert_id: '1',
+alert_desc:'',
+alert_time:'',
+alert_meta: [],
+
+app : {
+fa_class: '',
+app_id: '1',
+app_name: '',
+app_image: ''
+}
+
+
+
+},
+
+
+
+
+
+]
+},
+
+{
+name: 'Charts',
+url: '',
+state: '',
+fa_class: 'bar-chart-o',
+divider : true,
+alert_no : '',
+subPages: [
+{
+name: 'Line Chart',
+state: 'linechart',
+url: '#/linechart',
+fa_class: 'linechart',
+divider : true,
+alert_no : ''
+},
+{
+name: 'Time Series Chart',
+state: 'timeserieschart',
+url: '#/timeserieschart',
+fa_class: 'flask',
+divider : true,
+alert_no : ''
+},
+
+]
+},
+{
+name: 'Time Line',
+url: '#/timeline',
+state: 'timeline',
+fa_class: 'flask',
+divider : true,
+alert_no : '',
+
+
+},
+{
+name: 'Tables',
+url: '#/tables',
+state: 'tables',
+fa_class: 'edit',
+divider : true,
+alert_no : '',
+},
+{
+name: 'UI Elements',
+fa_class: 'wrench',
+alert_no : '',
+divider : true,
+subPages: [
+{
+name: 'Panels & Wells',
+state: 'panels-wells',
+url: '#/panels-wells',
+fa_class: '',
+divider : true,
+alert_no : ''
+
+},
+{
+name: 'Buttons',
+state: 'buttons',
+url: '#/buttons',
+fa_class: '',
+divider : true,
+alert_no : ''
+},
+{
+name: 'Notifications',
+state: 'notifications',
+url: '#/notifications',
+fa_class: '',
+divider : true,
+alert_no : ''
+},
+{
+name: 'Typography',
+state: 'typography',
+url: '#/typography',
+fa_class: '',
+divider : true,
+alert_no : ''
+},
+{
+name: 'Grid',
+state: 'grid',
+url: '#/grid',
+fa_class: '',
+divider : true,
+alert_no : ''
+}
+]
+},
+
+{
+name: 'BootStrap Sample Pages',
+fa_class: 'files-o',
+alert_no : '',
+divider : true,
+subPages: [
+
+{
+name: 'Home',
+state: 'home',
+url: '#/home',
+fa_class: '',
+divider : true,
+alert_no : ''
+},
+{
+name: 'About',
+state: 'about',
+url: '#/about',
+fa_class: '',
+divider : true,
+alert_no : ''
+},
+{
+name: 'Blog',
+state: 'blog',
+url: '#/blog',
+fa_class: '',
+divider : true,
+alert_no : ''
+},
+{
+name: 'Contact',
+state: 'contact',
+url: '#/contact',
+fa_class: '',
+divider : true,
+alert_no : ''
+},
+{
+name: 'Contact List',
+state: 'contact.list',
+url: '#/contact.list',
+fa_class: '',
+divider : true,
+alert_no : ''
+},
+{
+name: 'Login',
+state: 'login',
+url: '#/login',
+fa_class: '',
+divider : true,
+alert_no : ''
+}
+
+]
+
+
+}
+]
+
+}
+
+
+
+] }

@@ -1,0 +1,110 @@
+<li class="dropdown"   ng-repeat="rightcpanelpage in navcontroldata.menus.top.right_side_cp">
+
+
+    <a ng-if="rightcpanelpage.type=='hyperlink'" target=_blank
+       ng-style="{'height':navcontroldata.settings.top.menu_size,
+                       'background-color':navcontroldata.settings.nav_state[rightcpanelpage.menu_id].background_color}"
+
+
+       ng-mouseover="nv.setMouseOverOut('top',rightcpanelpage.menu_id,'over')"
+
+       ng-click="nv.setBackground('top',rightcpanelpage.menu_id)"
+
+       ng-mouseout="nv.setMouseOverOut('top',rightcpanelpage.menu_id,'out')"
+
+       ng-href="{{rightcpanelpage.url}}"
+    >
+
+        <div style="width:40px;float:left;color:{{navcontroldata.settings.top.icon_color}}">
+
+            <i  ng-style="{'color':navcontroldata.settings.nav_state[rightcpanelpage.menu_id].icon_color}"
+                class="{{rightcpanelpage.fa_class}}"></i>
+        </div>
+
+        <div style="margin-top:4px;float:left;">
+            <div style="position:relative;margin-right:-14px";
+                 ng-style="{'background-color':rightcpanelpage.alert_color}"
+                 class="top-label label label-danger"  ng-if="rightcpanelpage.alert_no!=0 && rightcpanelpage.alert_no!=''">{{rightcpanelpage.alert_no}}</div>
+        </div><!---->
+        <div style="margin-top:6px;margin-right:52px;font-size:13pt;color:{{navcontroldata.settings.top.icon_color}}">
+            <span  ng-hide="rightcpanelpage.show_name">&nbsp;</span>
+                            <span  ng-show="rightcpanelpage.show_name"  ng-style="{'color':navcontroldata.settings.nav_state[rightcpanelpage.menu_id].icon_color}"
+                            >{{rightcpanelpage.name}}</span>
+        </div>
+
+    </a>
+
+    <a ng-if="rightcpanelpage.type=='applet'"
+
+       data-target="#myModal{{rightcpanelpage.app_id}}"
+
+       ng-style="{'height':navcontroldata.settings.top.menu_size,
+                        'background-color':navcontroldata.settings.nav_state[rightcpanelpage.menu_id].background_color}"
+
+
+       ng-mouseover="nv.setMouseOverOut('top',rightcpanelpage.menu_id,'over')"
+
+
+       ng-mouseout="nv.setMouseOverOut('top',rightcpanelpage.menu_id,'out')"
+
+       ng-click="nv.setBackground('top',rightcpanelpage.menu_id)"
+
+
+
+
+       class="dropdown-toggle" data-backdrop="false" data-toggle="modal"
+    >
+
+        <div style="width:40px;float:left;color:{{navcontroldata.settings.top.icon_color}}">
+
+            <i  ng-style="{'color':navcontroldata.settings.nav_state[rightcpanelpage.menu_id].icon_color}"
+                class="{{rightcpanelpage.fa_class}}"></i>
+        </div>
+
+        <div style="margin-top:4px;float:left;">
+            <div style="position:relative;margin-right:-14px";
+                 ng-style="{'background-color':rightcpanelpage.alert_color}"
+                 class="top-label label label-danger"  ng-if="rightcpanelpage.alert_no!=0 && rightcpanelpage.alert_no!=''">{{rightcpanelpage.alert_no}}</div>
+        </div><!---->
+        <div style="margin-top:6px;margin-right:52px;font-size:13pt;color:{{navcontroldata.settings.top.icon_color}}">
+            <span  ng-hide="rightcpanelpage.show_name">&nbsp;</span>
+                            <span  ng-show="rightcpanelpage.show_name"  ng-style="{'color':navcontroldata.settings.nav_state[rightcpanelpage.menu_id].icon_color}"
+                            >{{rightcpanelpage.name}}  </span>
+        </div>
+
+    </a>
+
+    <a  ng-if="rightcpanelpage.type!='hyperlink' && rightcpanelpage.type!='applet'" ui-sref={{rightcpanelpage.state}}  class="dropdown-toggle"
+        ng-style="{'height':navcontroldata.settings.top.menu_size,
+                        'background-color':navcontroldata.settings.nav_state[rightcpanelpage.menu_id].background_color}"
+
+        ng-mouseover="nv.setMouseOverOut('top',rightcpanelpage.menu_id,'over')"
+
+
+        ng-mouseout="nv.setMouseOverOut('top',rightcpanelpage.menu_id,'out')"
+
+        ng-click="nv.setBackground('top',rightcpanelpage.menu_id)" data-toggle="dropdown"  >
+
+        <div style="width:40px;float:left;color:{{navcontroldata.settings.top.icon_color}}">
+
+            <i  ng-style="{'color':navcontroldata.settings.nav_state[rightcpanelpage.menu_id].icon_color}"
+                class="{{rightcpanelpage.fa_class}}"></i>
+        </div>
+
+        <div style="margin-top:4px;float:left;">
+            <div style="position:relative;margin-right:-14px";
+                 ng-style="{'background-color':rightcpanelpage.alert_color}"
+                 class="top-label label label-danger"  ng-if="rightcpanelpage.alert_no!=0 && rightcpanelpage.alert_no!=''">{{rightcpanelpage.alert_no}}</div>
+        </div><!---->
+        <div style="margin-top:6px;margin-right:52px;font-size:13pt;color:{{navcontroldata.settings.top.icon_color}}">
+            <span  ng-hide="rightcpanelpage.show_name">&nbsp;</span>
+                            <span  ng-show="rightcpanelpage.show_name"
+                                   ng-style="{'color':navcontroldata.settings.nav_state[rightcpanelpage.menu_id].icon_color}">{{rightcpanelpage.name}}</span>
+        </div>
+
+    </a>
+    <ul class="dropdown-menu" style="border: {{navcontroldata.settings.top.drop_border}} solid {{navcontroldata.settings.top.selected_color}};background-color:{{navcontroldata.settings.top.background_color}};" ng-if="rightcpanelpage.type=='main_nav'">
+        <li ng-repeat="page in navcontroldata.menus.top.pages" ng-class="{'dropdown-submenu' : page.subPages.length }"  ng-include="'top-nav-item.html'"></li>
+    </ul>
+</li>
+

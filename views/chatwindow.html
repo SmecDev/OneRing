@@ -1,0 +1,95 @@
+<div class="modal-dialog" >
+    <!-- Chat Panel Example-->
+    <div class="chat-panel panel panel-primary">
+        <div class="panel-heading">
+            <i class="fa fa-comments fa-fw"></i>
+            Chat
+            <div class="btn-group pull-right"><a  data-dismiss="modal">
+                <button type="button" class="btn btn-default btn-xs" >
+                    <i class="fa fa-close fa-fw""></i>
+                </button>
+            </a>
+
+            </div>
+        </div>
+
+        <div class="panel-body">
+            <ul class="chat">
+                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                    <div class="chat-body clearfix">
+                        <div class="header">
+                            <strong><span class=" label label-danger">Andrew Smith</span></strong>
+                            <small class="pull-right text-muted">
+                                <i class="fa fa-clock-o fa-fw"></i>12 mins ago
+                            </small>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                        </p>
+                    </div>
+                </li>
+                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                    <div class="chat-body clearfix">
+                        <div class="header">
+                            <small class=" text-muted">
+                                <i class="fa fa-clock-o fa-fw"></i>13 mins ago</small>
+                            <strong class="pull-right  label label-success">Bhaumik Patel</strong>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                        </p>
+                    </div>
+                </li>
+                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                    <div class="chat-body clearfix">
+                        <div class="header">
+                            <strong><span class=" label label-danger">Andrew Smith</span></strong>
+                            <small class="pull-right text-muted">
+                                <i class="fa fa-clock-o fa-fw"></i>14 mins ago</small>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                        </p>
+                    </div>
+                </li>
+                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                    <div class="chat-body clearfix">
+                        <div class="header">
+                            <small class=" text-muted">
+                                <i class="fa fa-clock-o fa-fw"></i>15 mins ago</small>
+                            <strong class="pull-right  label label-success">Bhaumik Patel</strong>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                        </p>
+                    </div></li>
+            </ul>
+        </div>
+
+        <div class="panel-footer">
+            <div class="input-group">
+                <input id="btn-input" ng-model=chat.mymessage type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning btn-sm" id="btn-chat" ng-click="send_message(chat)">
+                                        Send
+                                    </button>
+                                </span>
+            </div>
+        </div>
+
+    </div>
+    <!--End Chat Panel Example-->
+</div>
+

@@ -1,64 +1,26 @@
-angular.module('navController', [])
-	.controller('nav', function($scope, $state) {
-		$scope.title = 'Project name';
+angular.module('navModule', [])
+	.controller('nav', function($scope,$rootScope, $state, $http,appctrl) {
 
-		// returns true if the current router url matches the passed in url
-		// so views can set 'active' on links easily
-		$scope.isUrl = function(url) {
-			if (url === '#') return false;
-			return ('#' + $state.$current.url.source + '/').indexOf(url + '/') === 0;
-		};
+		/*
+		 var pagewrapper = angular.element(document.querySelector('#page-wrapper'));
+		 pagewrapper.css('margin', '0 0 0 0');
+		 var wrapper = angular.element(document.querySelector('#wrapper'));
+		 wrapper.css('background-color', '#FFFFFF');
+		 */
 
-		$scope.pages = [
-			{
-				name: 'Home',
-				url: '#/'
-			},
-			{
-				name: 'About',
-				url: '#/about'
-			},
-			{
-				name: 'Contact',
-				url: '#/contact'
-			},
-			{
-				name: 'Theme Example',
-				url: '#/theme'
-			},
-			{
-				name: 'Blog',
-				url: '#/blog'
-			},
-			{
-				name: 'Grid',
-				url: '#/grid'
-			},
-			{
-				name: 'UI',
-				url: '#/ui'
-			},
-			{
-				name: 'Dashboard',
-				url: '#/dashboard'
-			},
-			{
-				name: 'Dropdown Example',
-				url: '#',
-				subPages: [
-					{
-						name: 'About',
-						url: '#/about'
-					},
-					{},
-					{
-						name: 'Header',
-					},
-					{
-						name: 'Contact',
-						url: '#/contact'
-					}
-				]
-			}
-		]
+
+
+
+
+
+		var vm = this;
+		vm.setBackground=appctrl.setBackground;
+		vm.setMouseOverOut=appctrl.setMouseOverOut;
+
+	
+
+		vm.mehtest="meh al the way";
+
+
+
 	});

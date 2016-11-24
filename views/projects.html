@@ -1,0 +1,216 @@
+
+<div>
+    <div class="row">
+        <!-- Page Header -->
+        <div class="col-lg-12">
+            <h1 class="page-header">Projects</h1>
+        </div>
+        <!--End Page Header -->
+    </div>
+
+
+    <div class="row">
+        <!--quick info section -->
+        <div class="col-lg-3">
+            <div class="alert alert-danger text-center"
+                 ng-class="{'selected' : $state.current.name=='enterprise'}" ui-sref="enterprise">
+                <i class="fa fa-building-o fa-3x"></i>&nbsp;<b>Enterprise </b>
+
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="alert alert-success text-center"
+
+                 ng-class="{'selected' : $state.current.name=='portfolio'}" ui-sref="portfolio"
+            >
+                <i class="fa  fa-newspaper-o fa-3x"></i>&nbsp;<b>Portfolio </b>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="alert alert-info text-center"
+                 ng-class="{'selected' : $state.current.name=='programme'}" ui-sref="programme"
+            >
+                <i class="fa fa-folder-o fa-3x"></i>&nbsp;<b>Programme</b>
+
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="alert alert-warning text-center"
+
+                 ng-class="{'selected' : $state.current.name=='projectslist'}" ui-sref="projectslist"
+            >
+                <i class="fa  fa-industry fa-3x"></i>&nbsp;<b>Projects</b>
+            </div>
+        </div>
+        <!--end quick info section -->
+    </div>
+    <div class="row">
+        <!--quick info section -->
+        <div class="col-lg-6">
+            <div class="alert alert-danger text-center">
+                <i class="fa fa-truck fa-3x"></i>&nbsp;<b>Jobs
+
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="alert alert-success text-center"  ng-class="{'selected' : $state.current.name=='payment'}" ui-sref="payment">
+                <i class="fa  fa-credit-card-alt fa-3x"></i>&nbsp;<b>Payment
+            </div>
+        </div>
+        <!--end quick info section -->
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8">
+
+
+
+
+
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <i class="fa fa-bar-chart-o fa-fw"></i>
+                    REHABILITATION OF STORMWATER CANALS
+                    <div class="pull-right">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                Top Revenue Projects
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu pull-right" role="menu">
+                                <li><a href="#">CHURCH STREET (HEAVY REHABILITATION)</a>
+                                </li>
+                                <li><a href="#">REHABILITATION OF STORMWATER CANALS</a>
+                                </li>
+                                <li><a href="#">INNERRING/MOSHOESHOE STREET</a>
+                                </li>
+                                <li><a href="#">BASIC SANITATION TO ERVEN MOROKA THABA NW0911A EMPA STRUCTURES</a>
+                                </li>
+                                <li><a href="#">MECHANICAL PLANT</a>
+                                </li>
+
+
+                                <li class="divider"></li>
+                                <li><a href="#">More >></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-body">
+
+                    <!--Area chart example -->
+                    <div c3-simple id="timeserieschart" config="timeserieschart"></div>
+
+                </div>
+
+            </div>
+
+            <!--End area chart example -->
+            <!--Simple table example -->
+
+
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <i class="fa fa-bar-chart-o fa-fw"></i>Running Projects
+                    <div class="pull-right">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                Actions
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu pull-right" role="menu">
+                                <li><a href="#">Action</a>
+                                </li>
+                                <li><a href="#">Another action</a>
+                                </li>
+                                <li><a href="#">Something else here</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-body" ng-controller="DataController as ctl">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div>
+                                <button id="refreshButton" type="button" class="btn btn-success" ng-click="refreshData()">Refresh Data</button>  <strong>Calls Pending:</strong> <span ng-bind="callsPending"></span>
+                                <br>
+                                <br>
+                                <strong>{{ myData.length }} rows</strong>
+                                <br>
+                                <div id="grid1" ui-grid="gridOptions"
+                                     ui-grid-cellNav ui-grid-edit ui-grid-resize-columns ui-grid-pinning ui-grid-selection ui-grid-move-columns ui-grid-importer ui-grid-exporter ui-grid-grouping class="grid"></div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!--End simple table example -->
+
+        </div>
+
+        <div class="col-lg-4">
+            <div class="panel panel-primary text-center no-boder">
+                <div class="panel-body yellow">
+                    <i class="fa fa-bar-chart-o fa-3x"></i>
+                    <h3>10,741 </h3>
+                </div>
+                <div class="panel-footer">
+                            <span class="panel-eyecandy-title">Running Projects
+                            </span>
+                </div>
+            </div>
+            <div class="panel panel-primary text-center no-boder">
+                <div class="panel-body blue">
+                    <i class="fa fa-industry fa-3x"></i>
+                    <h3>2,060 </h3>
+                </div>
+                <div class="panel-footer">
+                            <span class="panel-eyecandy-title">Completed Projects
+                            </span>
+                </div>
+            </div>
+
+            <div class="panel panel-primary text-center no-boder">
+                <div class="panel-body red">
+                    <i class="fa fa-dollar fa-3x"></i>
+                    <h3>2,700 782, 233.00</h3>
+                </div>
+                <div class="panel-footer">
+                            <span class="panel-eyecandy-title">Total Revenue
+                            </span>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</div>
